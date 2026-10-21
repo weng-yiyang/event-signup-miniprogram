@@ -1,5 +1,7 @@
 # 活动报名小程序（微信原生小程序 + 微信云开发）
 
+[![CI](https://github.com/weng-yiyang/event-signup-miniprogram/actions/workflows/ci.yml/badge.svg)](https://github.com/weng-yiyang/event-signup-miniprogram/actions/workflows/ci.yml)
+
 一个基于微信原生小程序与微信云开发的**活动报名**示例项目。包含活动首页、活动详情、在线报名、报名记录四个页面，以及登录、提交报名、灌入演示数据三个云函数。
 
 > 本项目所有活动名称、参与人群均为**演示默认值**，上线前请按 `config.js` 中的注释替换为真实值。
