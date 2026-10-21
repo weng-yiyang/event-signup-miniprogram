@@ -1,0 +1,67 @@
+/* app.wxss 全局样式：单一主色 #2B6CB0，浅色背景，卡片式布局 */
+page {
+  background-color: #F5F7FA;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  color: #1A202C;
+  font-size: 28rpx;
+}
+
+.container {
+  padding: 24rpx;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+}
+
+.btn-primary {
+  background: #2B6CB0;
+  color: #FFFFFF;
+  border-radius: 48rpx;
+  font-size: 30rpx;
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+.btn-outline {
+  background: #FFFFFF;
+  color: #2B6CB0;
+  border: 2rpx solid #2B6CB0;
+  border-radius: 48rpx;
+  font-size: 30rpx;
+  padding: 20rpx 0;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(43, 108, 176, 0.10);
+  color: #2B6CB0;
+  font-size: 22rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 24rpx;
+}
+
+.muted {
+  color: #718096;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1A202C;
+}
+
+.meta {
+  margin-top: 8rpx;
+}
+
+.meta-row {
+  font-size: 26rpx;
+  line-height: 1.9;
+  color: #2D3748;
+}

@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/signup/index",
+    "pages/records/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2B6CB0",
+    "navigationBarTitleText": "活动报名",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7FA"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#2B6CB0",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/detail/index", "text": "详情" },
+      { "pagePath": "pages/signup/index", "text": "报名" },
+      { "pagePath": "pages/records/index", "text": "记录" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

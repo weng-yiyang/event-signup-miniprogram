@@ -1,0 +1,34 @@
+<view class="container">
+  <view wx:if="{{loading}}" class="loading muted">加载中...</view>
+
+  <block wx:else>
+    <view wx:if="{{activities.length === 0}}" class="empty card">
+      <view class="empty-title">暂无活动</view>
+      <view class="muted">请先在云开发控制台运行 seed 云函数灌入演示活动。</view>
+    </view>
+
+    <view wx:for="{{activities}}" wx:key="_id" class="card activity {{isSingle ? 'activity-single' : ''}}">
+      <view class="cover">
+        <image wx:if="{{item.cover}}" class="cover-img" src="{{item.cover}}" mode="aspectFill" />
+        <view wx:else class="cover-placeholder"></view>
+      </view>
+
+      <view class="activity-body">
+        <view class="title">{{item.title}}</view>
+        <view class="tags">
+          <text class="tag">{{item.audience}}</text>
+        </view>
+        <view class="meta">
+          <view class="meta-row"><text class="muted">时间：</text><text>{{item.startTimeText}} - {{item.endTimeText}}</text></view>
+          <view class="meta-row"><text class="muted">地点：</text><text>{{item.location}}</text></view>
+          <view class="meta-row"><text class="muted">名额：</text><text>{{item.registeredCount}}/{{item.capacity}}</text></view>
+        </view>
+
+        <view class="actions">
+          <view class="btn-outline action-btn" bindtap="onViewDetail" data-id="{{item._id}}">查看详情</view>
+          <view class="btn-primary action-btn" bindtap="onSignup" data-id="{{item._id}}">立即报名</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

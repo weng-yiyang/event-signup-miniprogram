@@ -1,0 +1,37 @@
+<view class="container">
+  <view wx:if="{{loading}}" class="loading muted">加载中...</view>
+
+  <view wx:elif="{{!activity}}" class="empty card">
+    <view class="empty-title">未选择活动</view>
+    <view class="muted">请先在首页选择活动后查看详情。</view>
+  </view>
+
+  <block wx:else>
+    <view class="card">
+      <view class="cover">
+        <image wx:if="{{activity.cover}}" class="cover-img" src="{{activity.cover}}" mode="aspectFill" />
+        <view wx:else class="cover-placeholder"></view>
+      </view>
+      <view class="title detail-title">{{activity.title}}</view>
+      <view class="tags"><text class="tag">{{activity.audience}}</text></view>
+      <view class="meta">
+        <view class="meta-row"><text class="muted">时间：</text><text>{{activity.startTimeText}} - {{activity.endTimeText}}</text></view>
+        <view class="meta-row"><text class="muted">地点：</text><text>{{activity.location}}</text></view>
+        <view class="meta-row"><text class="muted">主办方：</text><text>{{activity.organizer}}</text></view>
+        <view class="meta-row"><text class="muted">名额：</text><text>{{activity.registeredCount}}/{{activity.capacity}}</text></view>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="section-title">活动详情</view>
+      <view class="description">{{activity.description}}</view>
+      <view wx:if="{{activity.images.length > 0}}" class="images">
+        <image wx:for="{{activity.images}}" wx:key="*this" class="detail-img" src="{{item}}" mode="widthFix" />
+      </view>
+    </view>
+
+    <view class="footer-bar">
+      <view class="btn-primary footer-btn" bindtap="onSignup">立即报名</view>
+    </view>
+  </block>
+</view>

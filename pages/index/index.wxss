@@ -1,0 +1,64 @@
+.container {
+  padding: 24rpx;
+  padding-bottom: 160rpx;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 60rpx 24rpx;
+}
+
+.empty-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+}
+
+.cover {
+  width: 100%;
+  height: 320rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  background: #EDF2F7;
+}
+
+.activity-single .cover {
+  height: 360rpx;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cover-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #EDF2F7;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23A0AEC0'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Crect%20x='3'%20y='4'%20width='18'%20height='16'%20rx='2'/%3E%3Ccircle%20cx='8.5'%20cy='9.5'%20r='1.5'/%3E%3Cpath%20d='M21%2016l-5-5-4%204-2-2-4%204'/%3E%3C/svg%3E");
+  background-size: 96rpx 96rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.activity-body {
+  margin-top: 20rpx;
+}
+
+.tags {
+  margin: 16rpx 0;
+}
+
+.actions {
+  display: flex;
+  margin-top: 24rpx;
+}
+
+.action-btn {
+  flex: 1;
+}
+
+.action-btn:not(:last-child) {
+  margin-right: 20rpx;
+}
